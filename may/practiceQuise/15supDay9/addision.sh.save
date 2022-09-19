@@ -1,0 +1,3 @@
+for addition of two numbers
+read "Hint 1.add 2.sub 3.div 4.multipy"
+read -r ""

@@ -1,0 +1,25 @@
+
+===filter only .doc .mp3 .pdf files by
+
+for item in `ls *.pdf *.doc *.mp3`
+do
+        foldername=`echo $item | awk -F. '{print $2}'`
+
+===created backup folder on Desktop and folder name for the files
+
+        mkdir ../backup/$foldername
+
+===show file name without extentio    
+
+	filename=`echo $item | awk -F. '{print $1}'`
+
+===creatint filename in foldername in backup folder
+        
+	mkdir ../backup/$foldername/$filename/
+        
+===copy file in the filename folder 
+	
+	cp -r $item ../backup/$foldername/$filename
+done
+
+

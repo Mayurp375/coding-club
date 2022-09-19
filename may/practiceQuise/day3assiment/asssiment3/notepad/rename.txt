@@ -1,0 +1,8 @@
+mv filename updateFileName
+
+abc.log.1=*.20102019.1
+
+mv abc.log.1 abc.20102019.1
+mv def.log.1 abc.20102019.1
+mv ghi.log.1 abc.20102019.1
+mv jkl.log.1 abc.20102019.1
